@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#316bf3", "secondary-fixed": "#dbe1ff", "on-surface": "#191c1e", "on-secondary-container": "#fefcff", "on-secondary-fixed-variant": "#003ea8", "surface-tint": "#4d5f7e", "error": "#ba1a1a", "surface-container-high": "#e6e8eb", "on-primary-fixed-variant": "#364765", "inverse-surface": "#2d3133", "surface-variant": "#e0e3e6", "tertiary-container": "#002824", "on-secondary": "#ffffff", "primary-fixed-dim": "#b5c7eb", "on-tertiary-container": "#1c9a8e", "primary-container": "#10233f", "surface-container": "#eceef1", "background": "#f7f9fc", "outline": "#75777e", "on-tertiary-fixed-variant": "#005049", "on-primary-container": "#798bac", "on-surface-variant": "#44474d", "tertiary": "#00100d", "surface-container-lowest": "#ffffff", "outline-variant": "#c5c6ce", "error-container": "#ffdad6", "on-secondary-fixed": "#00174b", "inverse-primary": "#b5c7eb", "surface": "#f7f9fc", "on-tertiary": "#ffffff", "on-error": "#ffffff", "on-primary": "#ffffff", "inverse-on-surface": "#eff1f4", "primary": "#000d23", "surface-container-low": "#f2f4f7", "tertiary-fixed-dim": "#6bd8cb", "secondary-fixed-dim": "#b4c5ff", "on-primary-fixed": "#071b37", "on-tertiary-fixed": "#00201d", "surface-bright": "#f7f9fc", "tertiary-fixed": "#89f5e7", "surface-dim": "#d8dadd", "on-error-container": "#93000a", "secondary": "#0051d5", "primary-fixed": "#d6e3ff", "on-background": "#191c1e", "surface-container-highest": "#e0e3e6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "margin": "2rem", "space-lg": "1.5rem", "gutter": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "gutter-mobile": "1rem" }, fontFamily: { "body-lg": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"], "headline-md": ["Inter"], "title-md": ["Inter"], "display-hero": ["Inter"], "label-caps": ["Inter"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "display-hero-mobile": ["Inter"], "title-lg": ["Inter"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.005em", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }], "title-md": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "600" }], "display-hero": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "700" }], "label-caps": ["11px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-hero-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "title-lg": ["18px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(16,35,63,0.06)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm" data-path="book-journey" href="#"><img alt="Rydo Mobility Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VZQS1-U2NUCmWqmdSXW7c4ojqrBP6SEXmvraSID4Q9LFA93v6PpZCaRJYQ4XDD-4KPIH33DjH8a18iaFHH_Taf08RRKdMj9C0JWmWEGLnLGXKnvwW-_CuuUEweAqGnHanvhQ_FetfC-9LY001M_1vyqx4qf6Ab1XC9xq7rJLGKqr1OJXXQwAUHphUPDM3IlnIc3ff4f47jwTp5q6pweb4324LXJbLE_0VAPLSFESLiRwmW_MbqkRXJ6_ZM"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Rydo</span></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-secondary font-title-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="book-journey" href="#">Book Journey</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="fleet-and-vehicles" href="#">Fleet & Vehicles</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="business-and-corporate" href="#">Business & Corporate</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="airport-transfers" href="#">Airport Transfers</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="global-network" href="#">Global Network</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-xs"><div class="flex items-center px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm mr-1">language</span>EN (US) ▾</div><div class="flex items-center px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-sm mr-1">payments</span>USD ($) ▾</div></div><a class="hidden lg:flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" href="tel:+18007936642"><span class="material-symbols-outlined text-sm text-secondary">support_agent</span><span class="font-medium">+1 (800) 793-6642</span></a><a class="hidden sm:inline-flex items-center px-space-md py-1.5 rounded-full bg-primary-container text-on-secondary-container font-label-sm text-label-sm hover:bg-primary transition-colors" data-path="business-and-corporate" href="#">Corporate Portal</a><div class="flex items-center gap-space-sm pl-space-xs"><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-low" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgcq7BYd1gVwwPPIn0CVYeHrh6Tcr2zASCJfNQM9GORLyry4nT2HymdkyMXurrDYxw5Ne0_iPsjg-cDiOUNOb5pQirf2LmDMoA3Yr1pSggB8xQ5nBEawbQ_WUuVnf1kG8bYIWx5MAvkBQuCaepzc5p7zj9gGjciH24IEwld5dz11tB8X25Y5IY2qXpl8j9fXBUpsohBOfq500Jx2f7blkE1QJrvp064JsIfC7isAiqYeOji28xI7BdIQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-lowest"></span></div><div class="hidden 2xl:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Marcus Vance</span><span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">VIP Tier</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Sticky Search Context Bar -->
+<div class="sticky top-20 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-3.5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-lg">local_taxi</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-md text-title-md text-primary font-semibold truncate">JFK Airport, Terminal 4</span>
+<span class="material-symbols-outlined text-sm text-secondary">arrow_forward</span>
+<span class="font-title-md text-title-md text-primary font-semibold truncate">The St. Regis New York (2 E 55th St)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">Flight DL 412 Tracking</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 flex-wrap mt-0.5">
+<span>Fri, Oct 24, 2025</span>
+<span>•</span>
+<span class="font-medium text-on-surface">14:30 EDT</span>
+<span>•</span>
+<span>2 Passengers, 3 Bags</span>
+<span>•</span>
+<span>One-Way</span>
+<span>•</span>
+<span class="text-secondary font-medium">Est. 18.4 miles (42 mins via Queens Midtown Tunnel)</span>
+</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto shrink-0">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" id="modify-search-btn">
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+<span>Modify Search</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="live-map-toggle">
+<span class="material-symbols-outlined text-base">near_me</span>
+<span>Route Map</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modification Popover Drawer (Hidden by default) -->
+<div class="hidden bg-surface-container-lowest shadow-md" id="modify-drawer">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1.5">Pickup Location</label>
+<div class="flex items-center px-3 py-2.5 rounded-xl bg-surface-container-low text-on-surface text-body-md font-body-md gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">flight_land</span>
+<input class="bg-transparent border-0 outline-none w-full text-on-surface font-label-md text-label-md" type="text" value="JFK Airport, Terminal 4"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1.5">Drop-off Destination</label>
+<div class="flex items-center px-3 py-2.5 rounded-xl bg-surface-container-low text-on-surface text-body-md font-body-md gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm">location_city</span>
+<input class="bg-transparent border-0 outline-none w-full text-on-surface font-label-md text-label-md" type="text" value="The St. Regis New York (2 E 55th St)"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant uppercase mb-1.5">Date & Scheduled Time</label>
+<div class="flex items-center px-3 py-2.5 rounded-xl bg-surface-container-low text-on-surface text-body-md font-body-md gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+<input class="bg-transparent border-0 outline-none w-full text-on-surface font-label-md text-label-md" type="text" value="Oct 24, 2025 • 14:30"/>
+</div>
+</div>
+<div class="flex items-end gap-2">
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm">
+            Update Availability
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Route Mini-Drawer / Map Preview Container (Toggleable) -->
+<div class="hidden bg-surface-container-low" id="route-map-panel">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-4">
+<div class="rounded-2xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<div class="w-full h-44 bg-cover bg-center" data-location="John F. Kennedy International Airport, New York to The St. Regis New York" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCY8nGc1C39xfexFEz8xgyF4nffXmzqsCfuYhTbl9qXkuIgI00llfPCZIxiKZimXsIMIbLwoj7BoWDCLpoO-K8svg1NWBKiVrZOGmiXsMmALkw6R7cwFQCWbesjP5kOFwCQsCxyR9XYkeLWADwnc7NWNblNo12CXCmwAS-caKGUmHL_Y93RFzFX1y2S4Ta3aJ2dfKmE-5LcJ2N19dQILGVlWQEsSQTM0V289ELKP4gKvKdfmdBfvtSSuw')"></div>
+<div class="p-3 bg-surface-container flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Live Traffic Sync: Nominal</span>
+<span>Estimated Tolls Included ($11.75 MTA Tunnel)</span>
+</div>
+<span class="text-on-surface font-medium">Terminal 4 Chauffeur Meeting Point: Baggage Carousel 3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Workspace: Split Content Grid -->
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-8 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Filters & Flight Logistics (4 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-6">
+<!-- Flight Telemetry Active Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-5 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">flight_takeoff</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Flight Telemetry</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps font-semibold">Live Monitored</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between text-on-surface font-title-md text-title-md">
+<span class="font-semibold">DL 412 (LHR ➔ JFK)</span>
+<span class="text-secondary font-label-md text-label-md">On Schedule</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chauffeur will adjust pickup dynamically if wheels-down alters. Includes complimentary 60-minute terminal buffer.</p>
+</div>
+</div>
+<!-- Filter Controls Container -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Filters</h3>
+<button class="font-label-sm text-label-sm text-secondary hover:underline" id="reset-filters">Reset All</button>
+</div>
+<!-- Vehicle Category -->
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Vehicle Category</span>
+<div class="space-y-2 font-body-md text-body-md text-on-surface">
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<span>Executive Sedan</span>
+</div>
+<span class="text-xs text-on-surface-variant font-label-sm text-label-sm">E-Class / 5-Series</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<span class="font-medium text-primary">First Class</span>
+</div>
+<span class="text-xs text-on-surface-variant font-label-sm text-label-sm">S-Class / 7-Series</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<span>Luxury SUV</span>
+</div>
+<span class="text-xs text-on-surface-variant font-label-sm text-label-sm">Escalade / Navigator</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary focus:ring-0" type="checkbox"/>
+<span>Executive Van</span>
+</div>
+<span class="text-xs text-on-surface-variant font-label-sm text-label-sm">Mercedes V-Class</span>
+</label>
+</div>
+</div>
+<!-- Capacity Quick Filters -->
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Passenger Party Size</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 rounded-xl bg-primary-container text-on-secondary-container font-label-sm text-label-sm font-medium transition-colors">1 - 3</button>
+<button class="py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors">4 - 6</button>
+<button class="py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm transition-colors">7+</button>
+</div>
+</div>
+<!-- Luggage Capacity -->
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Minimum Luggage (Checked Bags)</span>
+<div class="flex items-center gap-2">
+<button class="flex-1 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">2 Bags</button>
+<button class="flex-1 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-medium">3+ Bags</button>
+<button class="flex-1 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">6+ Bags</button>
+</div>
+</div>
+<!-- Amenities Preferences -->
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Included Amenities</span>
+<div class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span>Chauffeur Meet & Greet with iPad board</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span>Complimentary High-Speed Wi-Fi</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span>Chilled Refreshments & Evian Water</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span>Child Seat / Booster on Request</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span>Executive Leather Interior</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input class="w-4 h-4 rounded text-secondary accent-secondary" type="checkbox"/>
+<span>Extended Rear Legroom Suite</span>
+</label>
+</div>
+</div>
+<!-- Price Range Slider -->
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">All-Inclusive Budget</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">$138 — $245</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-secondary" max="350" min="100" type="range" value="250"/>
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant">
+<span>$100</span>
+<span>$350 max</span>
+</div>
+</div>
+<!-- Transparent Pricing Assurance Seal -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl shrink-0 mt-0.5">verified_user</span>
+<div>
+<p class="font-label-sm text-label-sm text-primary font-semibold">Zero Surge • Transparent Guarantee</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Fares quoted reflect final charges inclusive of bridge/tunnel tolls, gratuities, airport fees, and live flight sync.</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Right Column: Vehicle Selection & Manifests (8 cols) -->
+<section class="lg:col-span-8 flex flex-col gap-6">
+<!-- Controls & Tab Toolbar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-surface-container-lowest p-4 rounded-2xl shadow-sm">
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl">
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm transition-all" id="view-available-tab">
+              Available Now (4 Tiers)
+            </button>
+<button class="px-4 py-2 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all" id="view-alternative-tab">
+              Alternative Times
+            </button>
+</div>
+<div class="flex items-center gap-3 self-end sm:self-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort By:</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md py-2 pl-3 pr-8 rounded-xl cursor-pointer focus:outline-none">
+<option>Recommended (Fastest Dispatch)</option>
+<option>Price: Low to High</option>
+<option>Passenger Capacity</option>
+<option>Luggage Space</option>
+</select>
+<span class="material-symbols-outlined text-sm text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Vehicle List Container -->
+<div class="space-y-5" id="vehicles-container">
+<!-- Card 1: Business Class (Sedan) -->
+<article class="vehicle-card group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all cursor-pointer" data-name="Business Class Sedan" data-price="138.50" data-vehicle-id="business-sedan">
+<div class="flex flex-col md:flex-row gap-6">
+<!-- Visual Mock/Placeholder -->
+<div class="w-full md:w-56 h-40 rounded-xl overflow-hidden bg-surface-container-low relative shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end black executive Mercedes E-Class sedan clean glossy paint side profile parked on airport tarmac luxury car dispatch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-STP_w3gtsP86tBr39UjY2_Twon-auJPJXIM2Roa8u0JeVwFmisdmN2zGmmEORY2TT1BhPhGMJ-Ncp4qh2Tm3j-fpcWCpe8mcVnj4hSZjqoSZepcFd-oJ7BGxa1xBaQXj8EjUQOT4GOVfvV3JJKiuQVyNvdbFFyPQbyihOzw2qXPmKBChPvJM3Fu3xPmcMlRPrT7bgs9iXP18s5GiuwVXUT-Vbq2d62uL9iBNDw7Deh6bnf0IAo_8RQ"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-caps text-label-caps font-semibold text-primary">
+                  Executive Class
+                </div>
+</div>
+<!-- Specs & Features -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-4">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Mercedes-Benz E-Class</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">or BMW 5 Series / Audi A6 • Late model fleet</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-md text-headline-md text-primary font-bold">$138.50</span>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">All-Inclusive Total</span>
+</div>
+</div>
+<!-- Badges / Capacity Chips -->
+<div class="flex items-center gap-2 flex-wrap mt-3 font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">person</span> 3 Passengers
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">luggage</span> 2 Checked Bags
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed-dim">schedule</span> 60m Free Waiting
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 line-clamp-2">
+                    Executive cabin appointment, perforated black leather seating, dual high-speed charging cables, bottled French natural mineral water, and complimentary cancellation up to 12 hours prior.
+                  </p>
+</div>
+<!-- Footer row with Action & Fare Details trigger -->
+<div class="flex items-center justify-between pt-4 mt-2">
+<button class="fare-breakdown-trigger text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-1" data-airport="7.25" data-base="110.00" data-tax="9.50" data-tolls="11.75" data-total="138.50" data-vehicle="Business Class Sedan">
+<span class="material-symbols-outlined text-sm">receipt_long</span> Fare Breakdown
+                  </button>
+<button class="select-tier-btn px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+                    Select Business Class
+                  </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: First Class (Mercedes-Benz S-Class) - RECOMMENDED & USES IMAGE_11 -->
+<article class="vehicle-card active-selection group relative bg-surface-container-lowest rounded-2xl p-6 shadow-md hover:shadow-xl transition-all cursor-pointer" data-name="First Class Suite" data-price="195.00" data-vehicle-id="first-class">
+<!-- Bestseller / Recommended floating badge -->
+<div class="absolute -top-3 left-6 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps tracking-wider uppercase font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs">star</span> Recommended • First Class Dispatch
+            </div>
+<div class="flex flex-col md:flex-row gap-6 mt-1">
+<!-- Visual from DataStore -->
+<div class="w-full md:w-56 h-44 rounded-xl overflow-hidden bg-surface-container-low relative shrink-0">
+<img alt="Luxury black Mercedes-Benz S-Class sedan parked outside a modern private jet terminal at dusk, cinematic dramatic lighting, chauffeur in sharp suit standing by door, high end executive ground mobility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwNfPmNBBbbTYflkcH4QMsVwOW2EMIkKODXiRw-VhqEVREFtZ9la2zr-VD7_IzSenUzsKPtX2p0SIgzcEJLsAVNakWLW8qscKjjZiTnxCbgHTF3Ud2ApCZKSsTnMwBRhlu7NBNZbve14t3DO6TOU9KGNIqt4E5oMoR05GDj4fOv0jkxXlniTvfYaTzciMmw-chkoh_9XX4458zecltn37qBJrZJvzS5lmFw3llK-lzjvamQVzNvMhbBw"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur font-label-caps text-label-caps text-on-primary">
+                  Flagship Chauffeur
+                </div>
+</div>
+<!-- Specs & Features -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Mercedes-Benz S-Class</h4>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-secondary-container font-label-caps text-label-caps">VVIP Standard</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">or BMW 7 Series Long Wheelbase • Guaranteed black lacquer finish</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-md text-headline-md text-primary font-bold">$195.00</span>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">All-Inclusive Total</span>
+</div>
+</div>
+<!-- Badges / Capacity Chips -->
+<div class="flex items-center gap-2 flex-wrap mt-3 font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-sm text-secondary">person</span> 3 Passengers
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-sm text-secondary">luggage</span> 3 Bags
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-medium">
+<span class="material-symbols-outlined text-sm">badge</span> Terminal Meet & Greet
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">wifi</span> Gigabit Wi-Fi
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">
+                    Personalized inside-terminal welcome with digital iPad name sign, white-glove luggage transfer to trunk, heated executive reclining seats, acoustic privacy glass, and zero wait delay.
+                  </p>
+</div>
+<!-- Footer row with Action & Fare Details trigger -->
+<div class="flex items-center justify-between pt-4 mt-2">
+<button class="fare-breakdown-trigger text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-1" data-airport="12.00" data-base="155.00" data-tax="16.25" data-tolls="11.75" data-total="195.00" data-vehicle="Mercedes-Benz S-Class First Class">
+<span class="material-symbols-outlined text-sm">receipt_long</span> Fare Breakdown
+                  </button>
+<button class="select-tier-btn px-6 py-2.5 rounded-xl bg-secondary hover:bg-secondary-container text-on-secondary font-label-md text-label-md font-semibold transition-all shadow-md">
+                    Select First Class
+                  </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Luxury SUV (Cadillac Escalade ESV) -->
+<article class="vehicle-card group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all cursor-pointer" data-name="Luxury SUV" data-price="225.00" data-vehicle-id="luxury-suv">
+<div class="flex flex-col md:flex-row gap-6">
+<!-- Visual Placeholder -->
+<div class="w-full md:w-56 h-40 rounded-xl overflow-hidden bg-surface-container-low relative shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High gloss midnight black Cadillac Escalade ESV luxury SUV parked outside VIP international terminal, polished chrome wheels, executive chauffeur standing beside luggage boot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5bq8eexun6y4FAYrWsK0cqpv1S04r0FZhH-_w9fNMxaVZiQC0cPe2kAuKpOd10Pkz2rYMDVUMjij7Czq1KEPpB52hXMZ3gyrTOYa3w-KPSIPqtxj2Fn2wyxY2iSxoOi0jPmTNumx8b4Y2JyA7wCR3ip20WFkFXY8q1HXW_yX51ySQR-Ei5oI1W_xkVyZxKhBj0Tg9vBbaLFou1gsoZyk2wEpkMWDEPQ8y_D0jVAJUy7A2MsgcveBbrA"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-caps text-label-caps font-semibold text-primary">
+                  Extended Cargo SUV
+                </div>
+</div>
+<!-- Specs & Features -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-4">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Cadillac Escalade ESV</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">or Lincoln Navigator L • Maximum legroom & cargo</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-md text-headline-md text-primary font-bold">$225.00</span>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">All-Inclusive Total</span>
+</div>
+</div>
+<!-- Badges / Capacity Chips -->
+<div class="flex items-center gap-2 flex-wrap mt-3 font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">groups</span> 6 Passengers
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">luggage</span> 6 Large Bags
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">ac_unit</span> Tri-Zone Climate
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 line-clamp-2">
+                    Executive privacy tinted glass, captain chairs with independent climate zone, immense cargo volume for oversize luggage or ski bags, premium AKG surround sound.
+                  </p>
+</div>
+<!-- Footer row with Action & Fare Details trigger -->
+<div class="flex items-center justify-between pt-4 mt-2">
+<button class="fare-breakdown-trigger text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-1" data-airport="14.00" data-base="180.00" data-tax="19.25" data-tolls="11.75" data-total="225.00" data-vehicle="Cadillac Escalade ESV Luxury SUV">
+<span class="material-symbols-outlined text-sm">receipt_long</span> Fare Breakdown
+                  </button>
+<button class="select-tier-btn px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+                    Select Luxury SUV
+                  </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4: Executive Van (Mercedes-Benz V-Class) -->
+<article class="vehicle-card group relative bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-md transition-all cursor-pointer" data-name="Executive Van" data-price="245.00" data-vehicle-id="executive-van">
+<div class="flex flex-col md:flex-row gap-6">
+<!-- Visual Placeholder -->
+<div class="w-full md:w-56 h-40 rounded-xl overflow-hidden bg-surface-container-low relative shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Mercedes-Benz V-Class luxury passenger van in deep metallic obsidian black, executive club seating setup, curbside at airport arrival terminal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzk3VzH1qvZoetbfN9t_wVcZ85Mz_vahoy94HHko8FOiZl-n2Ngh_VpM_5Jwd2j7GkkmEpNCZsP0E5tZvR-WGmvSm44x2ZpjuG19Z3CA1XI6omLFE4HpRpzfZXRug8vwpjJt7IamJ1M2oNTE2GA4azPGA2igXwYrQC2Ul6E7GD5s4TWNmOBOleaxKt5-GJApe0nBUvy95_utUH-T8QC9xp7qgg_Vklb8hZyltUkYinxp4ITaVWrOrnlw"/>
+<div class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur font-label-caps text-label-caps font-semibold text-primary">
+                  Conference Suite
+                </div>
+</div>
+<!-- Specs & Features -->
+<div class="flex-1 min-w-0 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-4">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Mercedes-Benz V-Class</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Corporate Group Transfer • Face-to-face conference seating</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-md text-headline-md text-primary font-bold">$245.00</span>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">All-Inclusive Total</span>
+</div>
+</div>
+<!-- Badges / Capacity Chips -->
+<div class="flex items-center gap-2 flex-wrap mt-3 font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">groups</span> 7 Passengers
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">luggage</span> 7 Suitcases
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">power</span> USB-C per seat
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 line-clamp-2">
+                    Opposing club conference seating, foldout center work table, individual climate controls, dedicated high-capacity rear luggage chamber, ideal for executive delegations.
+                  </p>
+</div>
+<!-- Footer row with Action & Fare Details trigger -->
+<div class="flex items-center justify-between pt-4 mt-2">
+<button class="fare-breakdown-trigger text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-1" data-airport="14.50" data-base="198.00" data-tax="20.75" data-tolls="11.75" data-total="245.00" data-vehicle="Mercedes-Benz V-Class Executive Van">
+<span class="material-symbols-outlined text-sm">receipt_long</span> Fare Breakdown
+                  </button>
+<button class="select-tier-btn px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+                    Select Executive Van
+                  </button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Fallback / Alternative Pickup Times View (Hidden by default) -->
+<div class="hidden space-y-4" id="alternative-times-view">
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-4">
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-2xl">update</span>
+<h4 class="font-title-lg text-title-lg text-primary">Flexible Dispatch Schedule</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Booking 30 to 60 minutes after scheduled flight arrival allows for enhanced chauffeur proximity and guaranteed priority curbside placement at JFK Terminal 4.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-2">
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Slot A (+30 min)</span>
+<span class="font-title-md text-title-md text-primary font-bold">15:00 EDT</span>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Recommended for customs</p>
+</div>
+<button class="mt-4 py-1.5 px-3 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors">Select 15:00</button>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Slot B (+45 min)</span>
+<span class="font-title-md text-title-md text-primary font-bold">15:15 EDT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High availability tier</p>
+</div>
+<button class="mt-4 py-1.5 px-3 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors">Select 15:15</button>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-colors cursor-pointer">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Slot C (+60 min)</span>
+<span class="font-title-md text-title-md text-primary font-bold">15:30 EDT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Maximum buffer guarantee</p>
+</div>
+<button class="mt-4 py-1.5 px-3 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface font-label-sm text-label-sm transition-colors">Select 15:30</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Rydo Corporate Guarantee Banner -->
+<div class="rounded-2xl bg-primary text-on-primary p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-wider">Executive Service Level Agreement</span>
+<h4 class="font-title-lg text-title-lg text-on-primary font-semibold">Chauffeur On-Time Guarantee or Ride is Free</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-xl">
+              Vetted executive chauffeurs arrive 15 minutes before landing. Monitored through live FAA radar integration with direct terminal paging protocols.
+            </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed-dim font-bold">99.98%</span>
+<span class="block font-label-caps text-label-caps text-on-primary-container">On-Time Index</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Transparent Fare Breakdown Drawer / Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm hidden" id="fare-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-6 shadow-2xl relative space-y-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Transparent Fare Audit</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<div class="space-y-1">
+<span class="font-title-md text-title-md text-primary font-semibold block" id="modal-vehicle-title">Mercedes-Benz S-Class</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">JFK Terminal 4 to Midtown Manhattan (18.4 miles)</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low space-y-3 font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface">
+<span>Base Transit Fare</span>
+<span class="font-medium font-mono" id="modal-base-fare">$155.00</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span>Airport Access & FBO Concession</span>
+<span class="font-medium font-mono" id="modal-airport-fee">$12.00</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span>State & Bridge Tolls (Est. Queens Midtown)</span>
+<span class="font-medium font-mono" id="modal-tolls">$11.75</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span>Chauffeur Gratuity (Included)</span>
+<span class="font-medium font-mono text-tertiary-fixed-dim">Included</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span>Regulatory Sales Tax (NY Transit)</span>
+<span class="font-medium font-mono" id="modal-tax">$16.25</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">eco</span> Carbon Offset Contribution
+          </span>
+<span class="font-medium font-mono text-secondary">Covered by Rydo</span>
+</div>
+</div>
+<div class="pt-2 flex items-baseline justify-between">
+<div>
+<span class="font-title-lg text-title-lg text-primary font-bold">Total Fare</span>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">No Hidden Or Curbside Surcharges</span>
+</div>
+<span class="font-headline-md text-headline-md text-secondary font-bold font-mono" id="modal-total">$195.00</span>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-sm" id="modal-confirm-btn">
+        Accept & Continue with This Tier
+      </button>
+</div>
+</div>
+<!-- Sticky Bottom Summary Bar (Selected Vehicle & Conversion) -->
+<aside class="sticky bottom-0 z-40 bg-surface-container-lowest shadow-[0_-4px_16px_rgba(16,35,63,0.08)] py-3 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center font-title-lg text-title-lg shrink-0">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Current Selection:</span>
+<span class="font-title-md text-title-md text-primary font-bold" id="bottom-selected-name">Mercedes-Benz S-Class First Class</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Meet & Greet with iPad board • 60m complimentary standby • Flight DL 412 Synced
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold font-mono" id="bottom-selected-price">$195.00</span>
+<span class="block font-label-caps text-label-caps text-on-surface-variant">All Taxes & Fees Included</span>
+</div>
+<button class="px-6 py-3 rounded-xl bg-secondary hover:bg-secondary-container text-on-secondary font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-md shrink-0" id="proceed-journey-btn">
+<span>Proceed to Journey Details</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+<script>
+  // Interactive Controls & State Logic
+  const modifyBtn = document.getElementById('modify-search-btn');
+  const modifyDrawer = document.getElementById('modify-drawer');
+  const mapToggle = document.getElementById('live-map-toggle');
+  const mapPanel = document.getElementById('route-map-panel');
+  const modal = document.getElementById('fare-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+
+  const bottomName = document.getElementById('bottom-selected-name');
+  const bottomPrice = document.getElementById('bottom-selected-price');
+
+  // Toggle Modify Search drawer
+  modifyBtn.addEventListener('click', () => {
+    modifyDrawer.classList.toggle('hidden');
+  });
+
+  // Toggle Route Map panel
+  mapToggle.addEventListener('click', () => {
+    mapPanel.classList.toggle('hidden');
+  });
+
+  // Vehicle Selection handling
+  const vehicleCards = document.querySelectorAll('.vehicle-card');
+  vehicleCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.fare-breakdown-trigger')) return;
+
+      vehicleCards.forEach(c => {
+        c.classList.remove('bg-surface-container-low', 'shadow-md');
+        c.classList.add('bg-surface-container-lowest', 'shadow-sm');
+        const btn = c.querySelector('.select-tier-btn');
+        if (btn) {
+          btn.classList.remove('bg-secondary', 'text-on-secondary');
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.textContent = btn.textContent.replace('✓ Selected', 'Select ' + c.dataset.name.split(' ')[0]);
+        }
+      });
+
+      card.classList.remove('bg-surface-container-lowest', 'shadow-sm');
+      card.classList.add('bg-surface-container-low', 'shadow-md');
+      
+      const activeBtn = card.querySelector('.select-tier-btn');
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-primary', 'text-on-primary');
+        activeBtn.classList.add('bg-secondary', 'text-on-secondary');
+        activeBtn.textContent = '✓ Selected';
+      }
+
+      bottomName.textContent = card.dataset.name;
+      bottomPrice.textContent = `$${parseFloat(card.dataset.price).toFixed(2)}`;
+    });
+  });
+
+  // Fare Breakdown Modal interactions
+  const fareTriggers = document.querySelectorAll('.fare-breakdown-trigger');
+  fareTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      document.getElementById('modal-vehicle-title').textContent = btn.dataset.vehicle;
+      document.getElementById('modal-base-fare').textContent = `$${btn.dataset.base}`;
+      document.getElementById('modal-airport-fee').textContent = `$${btn.dataset.airport}`;
+      document.getElementById('modal-tolls').textContent = `$${btn.dataset.tolls}`;
+      document.getElementById('modal-tax').textContent = `$${btn.dataset.tax}`;
+      document.getElementById('modal-total').textContent = `$${btn.dataset.total}`;
+      modal.classList.remove('hidden');
+    });
+  });
+
+  closeModalBtn.addEventListener('click', () => modal.classList.add('hidden'));
+  modalConfirmBtn.addEventListener('click', () => modal.classList.add('hidden'));
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.add('hidden');
+  });
+
+  // Tabs for Available vs Alternative Times
+  const availableTab = document.getElementById('view-available-tab');
+  const alternativeTab = document.getElementById('view-alternative-tab');
+  const vehiclesContainer = document.getElementById('vehicles-container');
+  const alternativeView = document.getElementById('alternative-times-view');
+
+  availableTab.addEventListener('click', () => {
+    availableTab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    availableTab.classList.remove('text-on-surface-variant');
+    alternativeTab.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    alternativeTab.classList.add('text-on-surface-variant');
+    vehiclesContainer.classList.remove('hidden');
+    alternativeView.classList.add('hidden');
+  });
+
+  alternativeTab.addEventListener('click', () => {
+    alternativeTab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    alternativeTab.classList.remove('text-on-surface-variant');
+    availableTab.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    availableTab.classList.add('text-on-surface-variant');
+    vehiclesContainer.classList.add('hidden');
+    alternativeView.classList.remove('hidden');
+  });
+
+  // Proceed button feedback
+  document.getElementById('proceed-journey-btn').addEventListener('click', () => {
+    const orig = document.getElementById('proceed-journey-btn').innerHTML;
+    document.getElementById('proceed-journey-btn').innerHTML = `<span class="material-symbols-outlined text-sm animate-spin">refresh</span> Reserving Chauffeur...`;
+    setTimeout(() => {
+      document.getElementById('proceed-journey-btn').innerHTML = orig;
+    }, 1200);
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Rydo Mobility Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VZQS1-U2NUCmWqmdSXW7c4ojqrBP6SEXmvraSID4Q9LFA93v6PpZCaRJYQ4XDD-4KPIH33DjH8a18iaFHH_Taf08RRKdMj9C0JWmWEGLnLGXKnvwW-_CuuUEweAqGnHanvhQ_FetfC-9LY001M_1vyqx4qf6Ab1XC9xq7rJLGKqr1OJXXQwAUHphUPDM3IlnIc3ff4f47jwTp5q6pweb4324LXJbLE_0VAPLSFESLiRwmW_MbqkRXJ6_ZM"/><span class="font-headline-sm text-headline-sm text-primary">Rydo Mobility</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Executive chauffeur mobility engineered for international first-class aviation travelers, multinational corporate fleets, and diplomatic transfers across 500+ global hubs.</p><div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container text-on-surface"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>Dispatch Network Active</span><span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-on-surface"><span class="material-symbols-outlined text-sm text-secondary">flight</span>500+ Airports</span></div></div><div class="space-y-space-sm"><span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider block">Global Coverage</span><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface cursor-pointer transition-colors">North America (JFK, LAX, ORD)</li><li class="hover:text-on-surface cursor-pointer transition-colors">Europe & UK (LHR, CDG, FRA)</li><li class="hover:text-on-surface cursor-pointer transition-colors">Asia-Pacific (HND, SIN, SYD)</li><li class="hover:text-on-surface cursor-pointer transition-colors">Middle East (DXB, DOH, AUH)</li><li class="hover:text-on-surface cursor-pointer transition-colors">Private FBO Terminals</li></ul></div><div class="space-y-space-sm"><span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider block">Safety & Standards</span><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-on-surface cursor-pointer transition-colors">Vetted Chauffeur Protocols</li><li class="hover:text-on-surface cursor-pointer transition-colors">Flight Telemetry Sync</li><li class="hover:text-on-surface cursor-pointer transition-colors">Diplomatic Security Escorts</li><li class="hover:text-on-surface cursor-pointer transition-colors">Zero-Emission Fleet Options</li><li class="hover:text-on-surface cursor-pointer transition-colors">Duty of Care Audits</li></ul></div><div class="space-y-space-sm"><span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider block">Certifications</span><div class="space-y-space-xs font-body-sm text-body-sm"><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(16,35,63,0.04)]"><span class="font-label-sm text-label-sm text-on-surface block">PCI-DSS Level 1</span><span class="font-body-sm text-body-sm text-on-surface-variant">Encrypted Global Transactions</span></div><div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_3px_rgba(16,35,63,0.04)]"><span class="font-label-sm text-label-sm text-on-surface block">ISO 27001 Certified</span><span class="font-body-sm text-body-sm text-on-surface-variant">Corporate Data Governance</span></div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-md flex-wrap"><span class="font-label-sm text-label-sm">© 2025 Rydo Mobility Inc. All rights reserved.</span><a class="hover:text-on-surface transition-colors" href="#">Terms of Transit</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Architecture</a><a class="hover:text-on-surface transition-colors" href="#">Chauffeur Standards</a><a class="hover:text-on-surface transition-colors" href="#">Service Level Agreement</a></div><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-sm text-secondary">shield</span><span class="font-label-sm text-label-sm">Global Ops 99.98% On-Time Precision</span></div></div></div></footer></body></html>
